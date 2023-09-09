@@ -3,7 +3,7 @@ layout: default
 title: Action Predicion of Wild Elephants
 ---
 
-# Project Name
+# Action Predicion of Wild Elephants
 
 ![Project Image](/path/to/project-image.jpg)
 
