@@ -45,3 +45,10 @@ footer {
     background-color: #333;
     color: #fff;
 }
+.video {
+    display: flex;
+    max-width: auto; /* Adjust as needed */
+    height: auto;
+    padding-right: 5px;
+}
+
