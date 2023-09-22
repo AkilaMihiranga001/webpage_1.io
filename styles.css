@@ -1,385 +1,47 @@
-/* styles.css */
+/* Add your styles here */
 
-/* Reset default styles and apply a common font */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Styling for the navigation bar */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-/* Styling for navigation links */
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ff6600; /* Change the color on hover */
-}
-
-/* Styling for the home page */
 body {
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Make sure the page takes at least the height of the viewport */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styling for the logos */
-.logo_1 img {
-    max-width: 120px; /* Adjust the max-width as needed */
-}
-
-.logo_2 img {
-    max-width: 300px; /* Adjust the max-width as needed */
-}
-
-/* Styling for the university name and department name */
-.name h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #fff;
-    
-}
-
-.name h2 {
-    font-size: 40px;
-    color: #fff; /* You can adjust the color as needed */
-    margin-bottom: 5px;
-}
-
-
-
-.header_project{
-    font-size: 30px;
-    color: #fff;
     padding: 20px;
 }
 
-main {
-    flex-grow: 1; /* Allow main content to grow and fill remaining space */
+.description, .images, .video, .members, .supervisors, .contact-info {
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: #f9f9f9;
 }
 
-/* Additional styles for the Info page */
-h1 {
-    color: #333;
+.images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: #666;
-    
+.video iframe {
+    max-width: 100%;
+    height: auto;
 }
 
-
-h3 {
-    color: #666;
-    
+.members ul, .supervisors ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Sticky footer styles */
+.members ul li, .supervisors ul li {
+    margin-bottom: 10px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
-    flex-shrink: 0; /* Prevent the footer from shrinking */
 }
-
-/* Add styles for the projects grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.project h2 {
-    margin-top: 10px;
-}
-
-.project-description .full-description {
-    display: none;
-}
-
-.project-description .toggle-description {
-    cursor: pointer;
-    color: #ff6600;
-    font-weight: bold;
-}
-
-.project-description .toggle-description:hover {
-    color: #ff3300; /* Change the color on hover */
-}
-
-
-
-
-/* Styling for the search bar */
-.search-bar {
-    position: sticky;
-    top: 50px;
-    display: flex;
-    align-items: right;
-    justify-content: flex-end;
-    padding: 10px; /* Adjust the padding to change the overall size of the search bar */
-}
-
-
-
-
-/* Styling for the search input */
-#search-input-2 {
-    height: 40px; /* Adjust the height to change the input field's size */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    flex-grow: 0.10; /* Allow the input to grow and fill remaining space */
-    padding: 5px 10px; /* Adjust padding to change the input field's size */
-}
-
-/* Styling for the search button */
-#search-button-2 {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px; /* Adjust padding to change the button's size */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#search-button-2:hover {
-    background-color: #ff3300; /* Change the color on hover */
-}
-
-
-
-/* Styling for the Info section */
-.info {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for the Department Head section */
-.department-head {
-    display: flex;
-    flex-direction: column; /* Arrange sections in a column */
-    align-items: left;
-    justify-content: flex-end; /* Align items to the bottom */
-    margin-top: 20px;
-}
-
-.head-info {
-    text-align: left;
-}
-
-.head-info img {
-    max-width: 200px;
-    border-radius:0;
-}
-
-.head-info h2 {
-    margin-top: 10px;
-}
-
-.contact-details {
-    margin-top: 20px; /* Add margin to push contact details to the top */
-}
-
-.contact-details h3 {
-    font-size: 18px;
-}
-
-.contact-details ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-details li {
-    margin-bottom: 5px;
-}
-
-.department {
-    display: flex;
-    flex-direction: column; /* Arrange sections in a column */
-    align-items: right;
-    justify-content: flex-end; /* Align items to the bottom */
-    margin-top: 20px;
-}
-
-.department-info {
-    text-align: right;
-}
-
-
-.category {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-
-.category h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-
-
-
-
-
-/* Styling for the sticky navigation bar */
-#sticky-nav {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px 0;
-    z-index: 100;
-}
-
-#sticky-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-}
-
-#sticky-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-#sticky-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-#sticky-nav a:hover {
-    color: #ff6600;
-}
-
-#sticky-nav-h {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px 0;
-    z-index: 100;
-
-}
-
-#sticky-nav-h ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-}
-
-#sticky-nav-h li {
-    display: inline;
-    margin-right: 20px;
-}
-
-#sticky-nav-h a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-#sticky-nav-h a:hover {
-    color: #ff6600;
-}
-
-
-.container-h {
-    display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
-    justify-content: space-between; /* Creates space between columns */
-    padding: 20px;
-}
-
-.column {
-    flex-basis: calc(50% - 10px); /* 50% width with some spacing in between */
-    margin-bottom: 20px; /* Add spacing between rows */
-}
-
-/* Media query for screens smaller than 768px */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack columns on top of each other */
-        align-items: center; /* Center columns horizontally */
-    }
-
-    .column {
-        flex-basis: 100%; /* Full width for columns on smaller screens */
-    }
-}
-
-/* Ensure the video itself is visible */
-.video {
-    display: flex;
-    max-width: auto; /* Adjust as needed */
-    height: auto;
-    padding-right: 5px;
-}
-
-
